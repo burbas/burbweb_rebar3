@@ -3,12 +3,15 @@
     {name, "project", "Name of the project"}
 ]}.
 
-{dir, "priv"}.
+{dir, "{{name}}"}.
+{dir, "{{name}}/priv"}.
+{dir, "{{name}}/src/controllers"}.
+{dir, "{{name}}/src/views"}.
 
-{template, "burbweb/routes.erl", "priv/{{name}}.routes.erl"}.
-{template, "burbweb/app.src", "src/{{name}}.app.src"}.
-{template, "burbweb/app.erl", "src/{{name}}_app.erl"}.
-{template, "burbweb/sup.erl", "src/{{name}}_sup.erl"}.
-{template, "burbweb/controller.erl", "src/{{name}}_main_controller.erl"}.
-{template, "burbweb/controller.dtl", "src/{{name}}_main_controller.dtl"}.
-{template, "burbweb/rebar.config", "rebar.config"}.
+{template, "burbweb/routes.erl", "{{name}}/priv/{{name}}.routes.erl"}.
+{template, "burbweb/app.src", "{{name}}/src/{{name}}.app.src"}.
+{template, "burbweb/app.erl", "{{name}}/src/{{name}}_app.erl"}.
+{template, "burbweb/sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
+{template, "burbweb/controller.erl", "{{name}}/src/{{name}}_main_controller.erl"}.
+{template, "burbweb/controller.dtl", "{{name}}/src/{{name}}_main_controller.dtl"}.
+{template, "burbweb/rebar.config", "{{name}}/rebar.config"}.
