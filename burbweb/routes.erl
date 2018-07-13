@@ -1,4 +1,4 @@
-{prefix => "",
+#{prefix => "",
  security => false,
  routes => [
             {"/", {{name}}_main_controller, index}
