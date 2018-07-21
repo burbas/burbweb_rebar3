@@ -10,7 +10,15 @@
    [kernel,
     stdlib
    ]},
-  {env,[]},
+  {env,[
+        {burbweb_applications, [
+                                #{
+                                  name => {{name}},
+                                  routes_file => "priv/{{name}}.routes.erl"
+                                 }
+                               ]}
+
+  ]},
   {modules, []},
   {maintainers, []},
   {licenses, ["Apache 2.0"]},
