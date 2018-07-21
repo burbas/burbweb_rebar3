@@ -5,9 +5,12 @@
 
 {dir, "{{name}}"}.
 {dir, "{{name}}/priv"}.
+{dir, "{{name}}/config"}.
 {dir, "{{name}}/src/controllers"}.
 {dir, "{{name}}/src/views"}.
 
+{template, "burbweb/sys.config", "{{name}}/config/sys.config"}.
+{template, "burbweb/start.sh", "{{name}}/start.sh"}.
 {template, "burbweb/routes.erl", "{{name}}/priv/{{name}}.routes.erl"}.
 {template, "burbweb/app.src", "{{name}}/src/{{name}}.app.src"}.
 {template, "burbweb/app.erl", "{{name}}/src/{{name}}_app.erl"}.
