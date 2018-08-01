@@ -1,6 +1,7 @@
 #{prefix => "",
- security => false,
- routes => [
+  type => html,
+  security => false,
+  routes => [
             {"/", {{name}}_main_controller, index}
            ],
  statics => [
