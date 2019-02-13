@@ -3,5 +3,5 @@
          index/3
         ]).
 
-index(<<"GET">>, _Path, _Req) ->
+index(#{method := <<"GET">>} = _Req) ->
     {ok, [{message, "Hello World!"}]}.
